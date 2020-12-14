@@ -234,7 +234,7 @@ section {
 }
 
 .destination .destinationList .box .content {
-    width: 100px;
+    width: 100%;
     height: 80px;
     display: flex;
     justify-content: center;
