@@ -168,7 +168,7 @@ section {
     width: 100%;
     height: 400px;
     z-index: 1;
-    /* background: linear-gradient(to bottom, #8e001c, transparent); */
+    /* background: linear-gradient(to bottom, #000, transparent); */
 }
 
 .banner:before,
@@ -181,7 +181,7 @@ section {
 }
 
 .banner2:before {
-    background: linear-gradient(to top, #8e001c, transparent);
+    background: linear-gradient(to top, #000, transparent);
 }
 
 .banner2:after {
@@ -189,12 +189,12 @@ section {
 }
 
 .banner3:after {
-    background: linear-gradient(to bottom, #8e001c, transparent);
+    background: linear-gradient(to bottom, #000, transparent);
 }
 
 .destination {
     text-align: center;
-    background: #8e001c;
+    background: #000;
 }
 
 .destination .content {
@@ -214,7 +214,7 @@ section {
     position: relative;
     min-width: 350px;
     height: 480px;
-    background: #191919;
+    background: #8e001c;
     transition: 0.5s;
     margin: 10px;
 }
