@@ -43,7 +43,8 @@ section {
     padding-bottom: 20px;
 }
 
-.header .logo {
+
+/* .header .logo {
     color: #fff;
     text-decoration: none;
     font-size: 1.2em;
@@ -52,6 +53,21 @@ section {
 .header .toggle {
     max-width: 40px;
     cursor: pointer;
+} */
+
+.header .langSwitcher {
+    color: #fff;
+}
+
+.header .langSwitcher a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.header .langSwitcher a.active {
+    color: #ffb300;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .banner {
@@ -61,6 +77,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #000;
 }
 
 .banner .content {
@@ -77,7 +94,7 @@ section {
 
 .banner .content p {
     color: #fff;
-    font-size: 1.2em;
+    font-size: 1.4em;
 }
 
 .btn {
@@ -102,6 +119,15 @@ section {
     opacity: 0.8;
 }
 
+.coverBg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .titleText {
     font-weight: 600;
     color: #ffb300;
@@ -111,7 +137,7 @@ section {
 
 .text {
     color: #fff;
-    font-size: 1em;
+    font-size: 1.3em;
 }
 
 .about {
@@ -125,7 +151,7 @@ section {
 .about .contentBx {
     max-width: 50%;
     width: 50%;
-    text-align: end;
+    text-align: center;
     padding-right: 40px;
 }
 
@@ -246,6 +272,65 @@ section {
     line-height: 1.2em;
 }
 
+.formBox {
+    background: rgba(255, 179, 0, 0.85);
+    width: 50%;
+    padding: 50px 80px;
+    z-index: 100;
+}
+
+.formBox .titleText {
+    color: #111;
+}
+
+.formBox .form .inputBox {
+    margin-bottom: 40px;
+}
+
+.formBox .form .inputBox input {
+    width: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: #8e001c;
+    border-bottom: 2px solid #8e001c;
+}
+
+.formBox .form .inputBox input::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #8e001c;
+    opacity: 1;
+    /* Firefox */
+}
+
+.formBox .form .inputBox input:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #8e001c;
+}
+
+.formBox .form .inputBox input::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #8e001c;
+}
+
+.formBox .form #formResponse {
+    margin-bottom: 10px;
+    color: #f4f1ed;
+    display: none;
+}
+
+.formBox .form .inputBox input[type="submit"] {
+    width: 200px;
+    background: #8e001c;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 400;
+}
+
 .footer {
     display: flex;
     justify-content: center;
@@ -320,7 +405,24 @@ section {
     .destination .destinationList .box .imgBx {
         height: 320px;
     }
+    .formBox {
+        width: 100%;
+        padding: 35px 40px 15px;
+    }
+    .formBox .titleText {
+        font-size: 1.5em;
+    }
+    .formBox .form .inputBox input[type="submit"] {
+        width: 100%;
+    }
     .footer .sci li a img {
         max-width: 30px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 959px) {
+    .formBox {
+        width: 100%;
+        padding: 35px 40px 15px;
     }
 }
