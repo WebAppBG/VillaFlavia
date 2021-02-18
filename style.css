@@ -140,6 +140,10 @@ section {
     font-size: 1.3em;
 }
 
+.banner3 .text {
+    color: #111;
+}
+
 .about {
     position: relative;
     width: 100%;
